@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Management System</title>
+    <link rel="stylesheet" href="styles.css"> 
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Bootstrap JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+  
+
+    
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="img/logo food.jpg" >
+            <span>Food Management</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="main.html">Menu</a></li>
+            <li><a href="about.html">About</a></li>
+            
+            <li><a href="inventory.html">Inventory</a></li>
+            <li><a href="View Orders.html">Orders</a></li>
+            <li><a href="report.html">Reports</a></li>
+        </ul>
+        <a href="index.html" class="login-btn">Login</a>
+    </nav>
+
+
+    <!-- Hero Section -->
+   
+
+<section class="hero" style="margin-top: 20px;">
+    <div id="foodSlider" class="carousel slide" data-bs-ride="carousel">
+       
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#foodSlider" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#foodSlider" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#foodSlider" data-bs-slide-to="2"></button>
+        </div>
+
+        
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="2000">
+                <img src="img/slide-1.jpg" class="d-block w-100" alt="Food Image 1">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="img/slide-2.jpg" class="d-block w-100" alt="Food Image 2">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="img/slide-3.jpg" class="d-block w-100" alt="Food Image 3">
+            </div>
+        </div>
+
+        
+        <button class="carousel-control-prev" type="button" data-bs-target="#foodSlider" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#foodSlider" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    
+    <div class="hero-content text-center">
+        <h1>Welcome to Food Management System</h1>
+        <p>Efficiently manage your food inventory, orders, and waste control with ease.</p>
+        <a href="main.html" class="btn btn-warning explore-btn">Explore Now</a>
+    </div>
+</section>
+
+
+    
+
+    <!-- Services Section -->
+    <section class="services">
+        <h2>Our Services</h2>
+        <div class="service-container">
+            <div class="service-box">
+                <h3>Inventory Management</h3>
+                <p>Track food stock levels and reduce waste efficiently.</p>
+            </div>
+            <div class="service-box">
+                <h3>Order Tracking</h3>
+                <p>Manage customer orders and ensure timely deliveries.</p>
+            </div>
+            <div class="service-box">
+                <h3>Recipe Management</h3>
+                <p>Store and organize recipes for better planning.</p>
+            </div>
+        </div>
+    </section>
+
+
+   <!-- Footerrrrrrrrrrrrr -->
+        <footer class="footer">
+            <div class="footer-container">
+               
+        <div>
+            <h3>Contact</h3>
+    
+                <p style="display: flex; align-items: center; margin: 5px 0;">
+                    <img src="img/email.png" width="20" height="20" style="margin-right: 8px;">
+                    khandagalenikita@gmail.com
+                </p>
+                <p style="display: flex; align-items: center; margin: 5px 0;">
+                    <img src="img/network.png" width="20" height="20" style="margin-right: 8px;">
+                    www.foodmanagement.com
+                </p>
+                <p style="display: flex; align-items: center; margin: 5px 0;">
+                    <img src="img/mob1.png" width="20" height="20" style="margin-right: 8px;">
+                    +91 8967453256
+                </p>
+            
+        </div>
+                
+                <div class="footer-column">
+                    <h3>Address</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Food Street, Karve Nagar, Pune</p>
+                    <p><i class="far fa-clock"></i> Open: Mon-Sat (8 AM - 10 PM)</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+    
+                <div class="footer-column">
+                    <h3>Find Us</h3>
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.886435201445!2d73.81465247519085!3d18.488802582598574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf3516b1bdb9%3A0xf630a9ab2f007c5e!2sSkills%20IT%20Academy!5e0!3m2!1sen!2sin!4v1742550791899!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="footer-bottom">
+                <p>&copy; 2025 Food Management System | All Rights Reserved</p>
+            </div>
+        </footer>
+    
+    
+    
+
+
+</body>
+</html>

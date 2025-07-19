@@ -1,0 +1,281 @@
+    
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+body {
+    background-color: #f8f8f8;
+}
+
+
+.navbar {
+    background-color: #ff6600;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: white;
+    height: 70px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+    white-space: nowrap;
+    margin-left: 30px;
+}
+
+.logo img {
+    width: 45px;
+    height: 45px;
+    margin-right: 8px;
+    border-radius: 50%;
+}
+
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline-block;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.nav-links a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffe600;
+}
+
+
+.login-btn {
+    background: #ffe600;
+    color: #333;
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s, color 0.3s;
+    display: flex;
+    align-items: center;
+   margin-right: 30px;
+}
+
+.login-btn:hover {
+    background: white;
+    color: #ff6600;
+}
+
+
+
+/* Hero Sectionnnnn */
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 500px; 
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5px;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.explore-btn {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+
+
+.services {
+    text-align: center;
+    padding: 50px 20px;
+    background: #fff;
+}
+
+.services h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #ff6600;
+}
+
+.service-container {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20x;
+    flex-wrap: wrap;
+}
+
+.service-box {
+    background: #ff6600;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 350px; 
+    transition: 0.3s;
+}
+
+.service-box:hover {
+    background: #e65c00;
+}
+
+
+/* Footer Css  */
+.footer {
+    background-color: #222;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.footer-container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 280px;
+    padding: 15px;
+    text-align: left;
+}
+
+.footer-column h3 {
+    color: #ffcc00;
+    margin-bottom: 12px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.footer p, .footer a {
+    color: #ddd;
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.footer a:hover {
+    color: #ffcc00;
+    text-decoration: underline;
+}
+
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 18px;
+    margin-right: 12px;
+    display: inline-block;
+    transition: 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+    color: #ffcc00;
+    transform: scale(1.1);
+}
+
+
+.map-container {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 220px; 
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+
+.footer-bottom {
+    background-color: #111;
+    padding: 12px;
+    text-align: center;
+    font-size: 14px;
+    color: #bbb;
+    margin-top: 25px;
+    border-top: 1px solid #444;
+}
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+    }
+
+    .footer-column {
+        text-align: center;
+    }
+
+    .social-icons a {
+        font-size: 20px;
+        margin: 5px;
+    }
+
+
+
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 15px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .login-btn {
+        margin-top: 10px;
+    }
+}
